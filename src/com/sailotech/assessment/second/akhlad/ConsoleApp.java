@@ -111,6 +111,15 @@ public class ConsoleApp {
 		}
 	}
 
+	/**
+	 * @author sibu
+	 * 
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * Incorrect validation message
+	 * 
+	 * Validations should have been at a central place
+	 * Why are we moving ahead when there is a validation error
+	 */
 	// Method to create an account
 	private static String createAccount(Connection connection, Scanner scanner) throws SQLException {
 		String message = null;
@@ -165,6 +174,16 @@ public class ConsoleApp {
 
 	}
 
+	/**
+	 * @author sibu
+	 * 
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * Validations should have been at a central place
+	 * Why are we moving ahead when there is a validation error
+	 * Get the password at the same time
+	 * Where is the loggedInPhoneNumber getting set?
+	 */
 	// Method to log into an account
 	private static String logInAccount(Connection connection, Scanner scanner) throws SQLException {
 		String message = null;
@@ -210,6 +229,11 @@ public class ConsoleApp {
 		return passwordCheckResult.next();
 	}
 
+	/**
+	 * @author sibu
+	 * 
+	 * Invalid implementation
+	 */
 	// Method to edit an account
 	private static String editAccount(Connection connection, String loggedInPhoneNumber, Scanner scanner)
 			throws SQLException {
@@ -247,6 +271,11 @@ public class ConsoleApp {
 		return message;
 	}
 
+	/**
+	 * @author sibu
+	 * 
+	 * Invalid implementation
+	 */
 	// Method to post a message to a recipient
 	private static String postMessage(Connection connection, String senderPhoneNumber, Scanner scanner)
 			throws SQLException {
@@ -297,6 +326,11 @@ public class ConsoleApp {
 
 	}
 
+	/**
+	 * @author sibu
+	 * 
+	 * Invalid implementation
+	 */
 	// Method to forward a message
 	private static String forwardMessage(Connection connection, String senderPhoneNumber, Scanner scanner)
 			throws SQLException {
@@ -340,6 +374,11 @@ public class ConsoleApp {
 
 	}
 
+	/**
+	 * @author sibu
+	 * 
+	 * Invalid implementation
+	 */
 	// Method to export messages from a recipient
 	private static String exportMessages(Connection connection, String recipientPhoneNumber) throws SQLException {
 		String message = null;
@@ -356,6 +395,11 @@ public class ConsoleApp {
 		return message;
 	}
 
+	/**
+	 * @author sibu
+	 * 
+	 * Invalid implementation
+	 */
 	// Method to log out
 	private static void logOut(boolean isLoggedIn, Connection connection) {
 
