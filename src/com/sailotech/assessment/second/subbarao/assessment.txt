@@ -1,0 +1,21 @@
+************************************************************************************************************************************
+													Database Interaction		Meeting Requirement		Coding Standards	  Total
+															(3)							(5)						(2)			   (10)
+************************************************************************************************************************************
+1. Create an account										0							3						1				4
+2. Log into an account										0							3						0				3
+3. Edit an account											0							0						0				0
+4. Post a message to a recipient							0							0						0				0
+5. Reply to a message from a recipient						0							0						0				0
+6. Forward a message from a recipient to another			0							0						0				0					
+7. Export messages from a recipient							0							0						0				0
+8. Log out													0							0						0				0								
+9. Note 													
+10. Create table account																										2
+	NOT NULL checks are missing on all columns
+	Missing primary key																											
+11. Create table message																										2
+	NOT NULL checks missing on all columns
+	Missing primary key	
+																																
+Total = 11/2 = 5.5

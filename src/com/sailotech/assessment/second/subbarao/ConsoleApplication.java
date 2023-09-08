@@ -102,6 +102,15 @@ public class ConsoleApplication {
 		}
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * Validations should have been at a central place
+	 */
 	public static void createAccount() {
 		System.out.print("Enter phone number (10 digits): ");
 		String phoneNumber = scanner.nextLine();
@@ -146,6 +155,16 @@ public class ConsoleApplication {
 		System.out.println("Account created successfully.");
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * Validations should have been at a central place
+	 * Where is the loggedInAccount being set???
+	 */
 	public static void logIn() {
 		System.out.print("Enter phone number (10 digits): ");
 		String phoneNumber = scanner.nextLine();
@@ -178,6 +197,10 @@ public class ConsoleApplication {
 		}
 	}
 
+	/**
+	 * @author sibu
+	 * Invalid implementation
+	 */
 	static void editAccount() {
 		if (loggedInAccount == null) {
 			System.out.println("You need to be logged in to edit your account.");
@@ -218,6 +241,10 @@ public class ConsoleApplication {
 
 	}
 
+	/**
+	 * @author sibu
+	 * Invalid implementation
+	 */
 	public static void postMessage() {
 		if (loggedInAccount == null) {
 			System.out.println("You need to be logged in to post a message.");
@@ -250,6 +277,10 @@ public class ConsoleApplication {
 		System.out.println("Message sent successfully.");
 	}
 
+	/**
+	 * @author sibu
+	 * Invalid implementation
+	 */
 	public static void replyToMessage() {
 		if (loggedInAccount == null) {
 			System.out.println("You need to be logged in to reply to a message.");
@@ -308,6 +339,10 @@ public class ConsoleApplication {
 		System.out.println("Reply sent successfully.");
 	}
 
+	/**
+	 * @author sibu
+	 * Invalid implementation
+	 */
 	public static void forwardMessage() {
 		if (loggedInAccount == null) {
 			System.out.println("You need to be logged in to forward a message.");
@@ -379,6 +414,10 @@ public class ConsoleApplication {
 		System.out.println("Message forwarded successfully.");
 	}
 
+	/**
+	 * @author sibu
+	 * Invalid implementation
+	 */
 	public static void exportMessages() {
 		if (loggedInAccount == null) {
 			System.out.println("You need to be logged in to export messages.");
@@ -425,6 +464,10 @@ public class ConsoleApplication {
 		}
 	}
 
+	/**
+	 * @author sibu
+	 * Invalid implementation
+	 */
 	public static void logOut() {
 		loggedInAccount = null;
 		System.out.println("Logged out successfully.");
