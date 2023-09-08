@@ -67,7 +67,17 @@ public class ConsoleApplication {
 			}
 		}
 	}
-
+	
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * Account should have a field to hold the phone number
+	 * Why the name isValidName1(), also, it is a duplicate isValidName()
+	 */
 // Create Account
 	public static void createAccount() {
 		System.out.println("Creating an account");
@@ -115,6 +125,16 @@ public class ConsoleApplication {
 		return password.matches("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@!#$%&*(){}\\[\\]]).{8,12}$");
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * 
+	 * Why the name isValidPassword1(), also, it is a duplicate isValidPassword()
+	 */
 // Login page
 	public static void login() {
 		System.out.println("Logging into an account");
@@ -146,6 +166,16 @@ public class ConsoleApplication {
 		return password.matches("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@!#$%&*(){}\\[\\]]");
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * Why the name isValidName1(), also, it is a duplicate isValidName()
+	 * Why the name isValidName1(), also, it is a duplicate isValidPassword()
+	 */	
 	public static void editAccount() {
 		if (loggedInPhoneNumber == null) {
 			System.out.println("You need to be logged in to edit your account.");
@@ -177,6 +207,15 @@ public class ConsoleApplication {
 		System.out.println("Account updated successfully!");
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * Even if not interacting with the database, keep the messages in memory.
+	 */	
 // postMessage
 	public static void postMessage() {
 		if (loggedInPhoneNumber == null) {
@@ -203,6 +242,11 @@ public class ConsoleApplication {
 		return message.trim().length() > 0;
 	}
 
+	
+	/**
+	 * @author sibu
+	 * An invalid implementation
+	 */	
 // replyMessage
 	public static void replyToMessage() {
 		if (loggedInPhoneNumber == null) {
@@ -237,6 +281,10 @@ public class ConsoleApplication {
 		System.out.println(recipientPhoneNumber);
 	}
 
+	/**
+	 * @author sibu
+	 * An invalid implementation
+	 */	
 // forwardMessage
 	public static void forwardMessage() {
 		if (loggedInPhoneNumber == null) {

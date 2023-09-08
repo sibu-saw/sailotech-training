@@ -1,0 +1,21 @@
+************************************************************************************************************************************
+													Database Interaction		Meeting Requirement		Coding Standards	  Total
+															(3)							(5)						(2)			   (10)
+************************************************************************************************************************************
+1. Create an account										0							4						1				5
+2. Log into an account										0							3						1				4
+3. Edit an account											0							3						1				4
+4. Post a message to a recipient							0							3						0				3
+5. Reply to a message from a recipient						0							0						0				0
+6. Forward a message from a recipient to another			0							0						0				0					
+7. Export messages from a recipient
+8. Log out													-							8						2				10
+9. Note 													
+10. Create table account
+	NOT NULL create_datetime, update_datetime																					 8
+11. Create table message
+	NOT NULL check missing on sender_phone, recipient_phone, post_datetime														 6
+	How to find out whether the parent_message was forwarded or replied to
+																																
+																																
+Total = 40/2 = 20
