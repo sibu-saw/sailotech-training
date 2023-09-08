@@ -61,6 +61,16 @@ public class Console_Application {
 		}
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * Validations should have been at a central place
+	 * Creation_of_account - Class naming convention
+	 */
 	static void createAccount() { // creating an account
 		System.out.println("Enter phone number (10 digits): ");
 		String phoneNumber = sc.nextLine();
@@ -101,6 +111,16 @@ public class Console_Application {
 		System.out.println("*****Account created successfully!!!!*****");
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * Validations should have been at a central place
+	 * Creation_of_account - Class naming convention
+	 */
 	static void logIn() { // log in into an account
 		System.out.println("Enter phone number (10 digits): ");
 		String phoneNumber = sc.nextLine();
@@ -129,6 +149,15 @@ public class Console_Application {
 		}
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * Validations should have been at a central place
+	 */
 	static void editAccount() { // edit an account
 		if (currentAccount == null) {
 			System.out.println("You need to log in first.");
@@ -162,6 +191,17 @@ public class Console_Application {
 		System.out.println("***Account information updated!****");
 	}
 
+	
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * 
+	 * Validations should have been at a central place
+	 * Creation_of_account - Class naming convention
+	 */
 	static void postMessage() { // Post a message to a recipient
 		if (currentAccount == null) {
 			System.out.println("You need to log in first.");
@@ -195,6 +235,19 @@ public class Console_Application {
 		System.out.println("****Message sent successfully!****");
 	}
 
+	
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * If there are no messages, take the user back to 5.2
+	 * 
+	 * Validations should have been at a central place
+	 * Creation_of_account - Class naming convention
+	 * How to find out what was the source of the reply
+	 */
 	void replyToMessage() { // Reply to a message from a recipient
 		if (currentAccount == null) {
 			System.out.println("You need to log in first.");
@@ -250,6 +303,19 @@ public class Console_Application {
 		System.out.println("***Reply sent successfully!***");
 	}
 
+	
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * Incorrect error messages
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * If there are no messages, take the user back to 6.2
+	 * 
+	 * Validations should have been at a central place
+	 * Creation_of_account - Class naming convention
+	 * How to find out what was the source of the forward
+	 */
 	static void forwardMessage() { // Forward a message from a recipient to another
 		if (currentAccount == null) {
 			System.out.println("You need to log in first.");
