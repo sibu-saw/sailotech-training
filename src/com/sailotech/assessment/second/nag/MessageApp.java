@@ -61,6 +61,15 @@ public class MessageApp {
 		} while (choice != 0);
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * Validation for password missing
+	 * 
+	 * Validations should have been at a central place
+	 */
 	public static void createAccount(Scanner scanner) {
 		System.out.print("Enter phonenumber (10 digits): ");
 		String phoneNumber = scanner.nextLine();
@@ -96,6 +105,10 @@ public class MessageApp {
 
 	}
 
+	/**
+	 * @author sibu
+	 * Invalid implementation
+	 */
 	public static void loginAccount(Scanner scanner) {
 		System.out.print("Enter phone number (10 digits): ");
 		String phoneNumber = scanner.nextLine();
@@ -128,25 +141,49 @@ public class MessageApp {
 		}
 	}
 
+	/**
+	 * @author sibu
+	 * No implementation
+	 */
 	public static void editAccount(Scanner scanner) {
 	}
 
+	/**
+	 * @author sibu
+	 * No implementation
+	 */
 	public static void postMessage(Scanner scanner) {
 
 	}
 
+	/**
+	 * @author sibu
+	 * No implementation
+	 */
 	public static void replyToMessage(Scanner scanner) {
 
 	}
 
+	/**
+	 * @author sibu
+	 * No implementation
+	 */
 	public static void forwardMessage(Scanner scanner) {
 
 	}
 
+	/**
+	 * @author sibu
+	 * No implementation
+	 */
 	public static void exportMessages(Scanner scanner) {
 
 	}
 
+	/**
+	 * @author sibu
+	 * Invalid implementation
+	 */
 	public static void logout() {
 
 		System.out.println("Logged out successfully.");
