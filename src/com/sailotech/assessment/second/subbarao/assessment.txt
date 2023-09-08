@@ -14,8 +14,8 @@
 10. Create table account																										2
 	NOT NULL checks are missing on all columns
 	Missing primary key																											
-11. Create table message																										2
+11. Create table message																										5
 	NOT NULL checks missing on all columns
 	Missing primary key	
 																																
-Total = 11/2 = 5.5
+Total = 14/2 = 7

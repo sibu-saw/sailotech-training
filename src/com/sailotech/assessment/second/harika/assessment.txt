@@ -14,8 +14,8 @@
 10. Create table account
 	NOT NULL check missing on last_name, password, create_datetime, update_datetime												6
 11. Create table message
-	NOT NULL check missing on sender_phone_number, recipient_phone_number, post_datetime										6
+	NOT NULL check missing on sender_phone_number, recipient_phone_number, post_datetime										15
 	How to find out whether the parent_message was forwarded or replied to
 																																
 																																
-Total = 42/2 = 21
+Total = 51/2 = 25.5

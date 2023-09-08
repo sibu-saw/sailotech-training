@@ -13,8 +13,8 @@
 9. Note 													
 10. Create table account																										8
 	NULL checks missing on create_date_time, update_date_time																								
-11. Create table message																										8
+11. Create table message																										10
 	NULL checks missing on post_date_time
 	Missing FK reference on parent_message_id	
 																																
-Total = 30/2 = 15
+Total = 32/2 = 16
