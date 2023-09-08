@@ -52,6 +52,14 @@ class AccountSystem {
 		}
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * Incorrect validation messages
+	 * 
+	 */
 //creating an account
 	private void createAccount() {
 		String phoneNumber = getValidPhoneNumber();
@@ -109,6 +117,15 @@ class AccountSystem {
 		}
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * On an invalid input, stay at the same menu item allowing the user to re-enter
+	 * Incorrect validation messages
+	 * Why is the user being take to edit immediately after login??
+	 * 
+	 */
 //log into account 
 	private void logIntoAccount() {
 		String phoneNumber = getValidPhoneNumber();
@@ -127,6 +144,11 @@ class AccountSystem {
 		editAccount(account);
 	}
 
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 */
 //editing an account details
 	private void editAccount(Account account) {
 		String newFirstName = getValidName("new first");
@@ -138,6 +160,13 @@ class AccountSystem {
 		System.out.println("Account updated successfully");
 	}
 
+	
+	/**
+	 * @author sibu
+	 * Database interaction missing
+	 * 
+	 * If not in the database, the message should have held in memory
+	 */
 //posting a message to another user
 	private void postMessage(Account sender) {
 		String recipientPhoneNumber = getValidPhoneNumber();
@@ -163,6 +192,10 @@ class AccountSystem {
 		}
 	}
 
+	/**
+	 * @author sibu
+	 * Invalid implementation
+	 */
 // giving reply to a message
 	private void replyToMessage(Account sender) {
 		String recipientPhoneNumber = getValidPhoneNumber();
